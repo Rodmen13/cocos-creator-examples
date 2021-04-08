@@ -14,7 +14,11 @@
   "excluded-modules": [
     "Geom Utils",
     "3D",
-    "3D Primitive"
+    "3D Primitive",
+    "3D Physics/cannon.js",
+    "3D Physics/Builtin",
+    "3D Particle",
+    "SafeArea"
   ],
   "facebook": {
     "appID": "",
@@ -41,5 +45,8 @@
   "use-customize-simulator": true,
   "use-project-simulator-setting": true,
   "assets-sort-type": "name",
-  "start-scene": "current"
+  "start-scene": "current",
+  "migrate-history": [
+    "cloud-function"
+  ]
 }
