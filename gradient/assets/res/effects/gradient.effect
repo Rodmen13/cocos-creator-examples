@@ -71,7 +71,7 @@ CCProgram fs %{
 
   uniform LAMYOUMG_COM {
     float gradient_value;
-  } 
+  }; 
 
   void main () {
     vec4 o_first = vec4(1, 1, 1, 1);
