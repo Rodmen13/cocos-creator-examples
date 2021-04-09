@@ -67,6 +67,9 @@ cc.Class({
         },
 
 
+        /**
+         * @type {cc.Vec2[]}
+         */
         _vertexes: {
             default: [],
             type: [cc.Vec2]
@@ -105,8 +108,7 @@ cc.Class({
 
         renderer.mesh = null;
         this.renderer = renderer;
-        let builtinMaterial = new cc.Material();
-        builtinMaterial.copy(cc.Material.getInstantiatedBuiltinMaterial("unlit", this));   //getBuiltinMaterial
+        let builtinMaterial=cc.MaterialVariant.createWithBuiltin("unlit");
         renderer.setMaterial(0, builtinMaterial);
 
         this._applySpriteFrame();
@@ -114,10 +116,14 @@ cc.Class({
     },
 
     _updateMesh() {
+        /**
+         * @type {cc.Mesh}
+         */
         let mesh = this._meshCache[this.vertexes.length];
         if (!mesh) {
             mesh = new cc.Mesh();
             mesh.init(new gfx.VertexFormat([
+                //創建一個2d的圖形，所以需要兩個值來保存位置訊息
                 { name: gfx.ATTR_POSITION, type: gfx.ATTR_TYPE_FLOAT32, num: 2 },
                 { name: gfx.ATTR_UV0, type: gfx.ATTR_TYPE_FLOAT32, num: 2 },
             ]), this.vertexes.length, true);
@@ -132,6 +138,9 @@ cc.Class({
         // cc.log('_applyVertexes');
 
         // 设置坐标
+        /**
+         * @type {cc.Mesh}
+         */
         const mesh = this.mesh;
         mesh.setVertices(gfx.ATTR_POSITION, this.vertexes);
 
@@ -205,6 +214,14 @@ cc.Class({
     },
 
     // 判断一个点是否在三角形内
+    /**
+     * 
+     * @param {*} point 
+     * @param {cc.Vec2} triA 
+     * @param {cc.Vec2} triB 
+     * @param {cc.Vec2} triC 
+     * @returns 
+     */
     _testInTriangle(point, triA, triB, triC) {
         let AB = triB.sub(triA), AC = triC.sub(triA), BC = triC.sub(triB), AD = point.sub(triA), BD = point.sub(triB);
         return (AB.cross(AC) >= 0 ^ AB.cross(AD) < 0)  // D,C 在AB同同方向
@@ -216,6 +233,9 @@ cc.Class({
     _applySpriteFrame() {
         // cc.log('_applySpriteFrame');
         if (this.spriteFrame) {
+            /**
+             * @type {cc.MeshRenderer}
+             */
             const renderer = this.renderer;
             let material = renderer._materials[0];
             // Reset material
