@@ -1,0 +1,36 @@
+{
+  "ver": "2.3.5",
+  "uuid": "86580e06-1f56-4301-a08f-789d79da3c04",
+  "type": "sprite",
+  "wrapMode": "clamp",
+  "filterMode": "bilinear",
+  "premultiplyAlpha": false,
+  "genMipmaps": false,
+  "packable": false,
+  "width": 728,
+  "height": 349,
+  "platformSettings": {},
+  "subMetas": {
+    "goodroad-btn": {
+      "ver": "1.0.4",
+      "uuid": "d6a0ac57-8067-4765-81ff-779d557f932e",
+      "rawTextureUuid": "86580e06-1f56-4301-a08f-789d79da3c04",
+      "trimType": "auto",
+      "trimThreshold": 1,
+      "rotated": false,
+      "offsetX": 0,
+      "offsetY": 0,
+      "trimX": 0,
+      "trimY": 0,
+      "width": 728,
+      "height": 349,
+      "rawWidth": 728,
+      "rawHeight": 349,
+      "borderTop": 0,
+      "borderBottom": 0,
+      "borderLeft": 0,
+      "borderRight": 0,
+      "subMetas": {}
+    }
+  }
+}
