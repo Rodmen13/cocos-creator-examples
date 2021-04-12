@@ -185,9 +185,8 @@ cc.Class({
                 cc.error(err.message || err);
                 return;
             }
-            let matt = new cc.Material();
+            let matt = cc.MaterialVariant.create(mat)
             // 拷贝一份，避免共用材料
-            matt.copy(mat);
             // cc.log(mat)
             // cc.log(matt)
 
