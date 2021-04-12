@@ -37,7 +37,7 @@ CCProgram vs %{
     float amplitude;
     float wave;
     vec2 startPos;
-  } 
+  }; 
 
   #if USE_TEXTURE
     in mediump vec2 a_uv0;

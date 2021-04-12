@@ -85,6 +85,9 @@
     "_components": [
       {
         "__id__": 17
+      },
+      {
+        "__id__": 18
       }
     ],
     "_prefab": null,
@@ -174,7 +177,7 @@
       "array": [
         0,
         0,
-        623.5382907247958,
+        365.4528919030466,
         0,
         0,
         0,
@@ -490,7 +493,9 @@
     },
     "_enabled": true,
     "_materials": [
-      null
+      {
+        "__uuid__": "a9a40008-ba59-4a33-9b37-ca55e03981ca"
+      }
     ],
     "_mesh": null,
     "_receiveShadows": false,
@@ -631,14 +636,14 @@
     "_anchorPoint": {
       "__type__": "cc.Vec2",
       "x": 0.5,
-      "y": 0.5
+      "y": 1
     },
     "_trs": {
       "__type__": "TypedArray",
       "ctor": "Float64Array",
       "array": [
         133.167,
-        197.858,
+        290.134,
         0,
         0,
         0,
@@ -694,7 +699,9 @@
     },
     "_enabled": true,
     "_materials": [
-      null
+      {
+        "__uuid__": "a9a40008-ba59-4a33-9b37-ca55e03981ca"
+      }
     ],
     "_mesh": null,
     "_receiveShadows": false,
@@ -751,5 +758,32 @@
     "_fitWidth": true,
     "_fitHeight": true,
     "_id": "dfsnPZgO1LZqavtPFf6g1C"
+  },
+  {
+    "__type__": "cc.Widget",
+    "_name": "",
+    "_objFlags": 0,
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "alignMode": 1,
+    "_target": null,
+    "_alignFlags": 45,
+    "_left": 0,
+    "_right": 0,
+    "_top": 0,
+    "_bottom": 0,
+    "_verticalCenter": 0,
+    "_horizontalCenter": 0,
+    "_isAbsLeft": true,
+    "_isAbsRight": true,
+    "_isAbsTop": true,
+    "_isAbsBottom": true,
+    "_isAbsHorizontalCenter": true,
+    "_isAbsVerticalCenter": true,
+    "_originalWidth": 0,
+    "_originalHeight": 0,
+    "_id": "62YsYakMhL17Tbh9KaYtfI"
   }
 ]
